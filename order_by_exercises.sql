@@ -9,26 +9,26 @@ Where gender = 'M'
     )
 Order By last_name, first_name;
 
-Select first_name, last_name
+Select emp_no, first_name, last_name
 From employees
 Where last_name LIKE 'E%'
-Order By emp_no;
+Order By emp_no DESC;
 
 Select first_name, last_name
 From employees
 Where last_name LIKE '%Q%';
 
-Select first_name, last_name
+Select emp_no, first_name, last_name
 From employees
 Where last_name LIKE 'E%'
    Or last_name LIKE '%E'
-Order By emp_no;
+Order By emp_no DESC;
 
-Select first_name, last_name
+Select emp_no, first_name, last_name
 From employees
 Where last_name LIKE 'E%'
   And last_name LIKE '%E'
-Order By emp_no;
+Order By emp_no DESC;
 
 Select first_name, last_name
 From employees
