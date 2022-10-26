@@ -9,4 +9,4 @@ Limit 10;
 Select emp_no
 From salaries
 Order By salary Desc
-Limit 5;
+Limit 5 Offset 45;
