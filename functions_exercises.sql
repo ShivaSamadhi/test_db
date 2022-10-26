@@ -40,7 +40,7 @@ From employees
 Where month(birth_date) = 12
   AND day(birth_date) = 25;
 
-Select Concat(first_name, ' ', last_name, ' ', hire_date)
+Select Concat(first_name, ' ', last_name, ' ', datediff(now(), hire_date))
 From employees
 Where year(hire_date) Between 1990 And 1999
   And month(birth_date) = 12
